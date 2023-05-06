@@ -9,6 +9,7 @@ const Layout = ({ children }: Props) => {
         <Container display="flex">
             <VStack flex={1}>
                 <Header />
+                {children}
             </VStack>
         </Container>
         </>
