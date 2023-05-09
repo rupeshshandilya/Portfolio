@@ -28,7 +28,7 @@ const Header = () => {
         </NextLink>
         <NextLink href='/blog' passHref>
           <MotionButton as={Link} size='sm' variant='ghost'>
-            Contact
+            Blog
           </MotionButton>
         </NextLink>
         <IconButton
