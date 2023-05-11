@@ -16,17 +16,17 @@ const Header = () => {
         </Link>
       </NextLink>
       <HStack alignItems='center' spacing={{ base: 0, md: 2 }}>
-        <NextLink href='/about' passHref>
+        <NextLink href='/error' passHref>
           <MotionButton as={Link} size='sm' variant='ghost'>
             About
           </MotionButton>
         </NextLink>
-        <NextLink href='/projects' passHref>
+        <NextLink href='/error' passHref>
           <MotionButton as={Link} size='sm' variant='ghost'>
             Projects
           </MotionButton>
         </NextLink>
-        <NextLink href='/blog' passHref>
+        <NextLink href='/error' passHref>
           <MotionButton as={Link} size='sm' variant='ghost'>
             Blog
           </MotionButton>
