@@ -53,7 +53,7 @@ export default function Navigation() {
         >
           <li>Skills</li>
         </Link>
-        {/* <Link
+        <Link
           href="/experience"
           className={`${router.pathname == "/experience" ? "active" : ""}`}
           onMouseEnter={() => cursorChangeHandler("hovered")}
@@ -61,8 +61,8 @@ export default function Navigation() {
           onClick={closeNavMenu}
         >
           <li>Experience</li>
-        </Link> */}
-        {/* <Link
+        </Link>
+        <Link
           href="/contact"
           className={`${router.pathname == "/contact" ? "active" : ""}`}
           onMouseEnter={() => cursorChangeHandler("hovered")}
@@ -70,7 +70,7 @@ export default function Navigation() {
           onClick={closeNavMenu}
         >
           <li>Contact</li>
-        </Link> */}
+        </Link>
       </ul>
       {!open ? (
         <div className="nav-burger" onClick={openNavMenu}>
