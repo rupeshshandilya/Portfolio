@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Rupesh Shandilya • Home</title>
+        <title>Rupesh Shandilya | Home</title>
         <meta
           name="description"
           content="
