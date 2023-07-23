@@ -21,7 +21,7 @@ export default function Contact() {
           I’m a FullStack Developer & Android Developer, I’m passionate about creating beautiful, intuitive and responsive websites and apps."      
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/illustrations/rupesh_69.svg" />
       </Head>
       <main className="contact">
         <motion.div

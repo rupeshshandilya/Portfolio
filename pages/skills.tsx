@@ -178,7 +178,7 @@ export default function Skills() {
           "
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/illustrations/rupesh_69.svg" />
       </Head>
       <main className="skills">
         <div className="page__lines"></div>

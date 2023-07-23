@@ -41,7 +41,7 @@ export default function about() {
     "
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/illustrations/rupesh_69.svg" />
       </Head>
       <main className="about">
         <div className="page__lines"></div>

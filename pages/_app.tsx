@@ -70,13 +70,6 @@ export default function App({ Component, pageProps, router }: AppProps) {
           title: "Rupesh Shandilya",
           description:
             "I’m a FullStack Developer & Android Developer, I’m passionate about creating beautiful, intuitive and responsive websites.",
-          images: [
-            {
-              url: "https://lndev.me/images/lndev.JPG",
-              alt: "",
-              type: "image/jpeg",
-            },
-          ],
           siteName: "Rupesh Shandilya",
         }}
       />
