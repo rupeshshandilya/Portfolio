@@ -5,6 +5,8 @@ import { AnimatePresence } from "framer-motion";
 import Cursor from "../Components/Cursor/Cursor";
 import MouseContextProvider from "../context/mouseContext";
 
+import useSound from "use-sound";
+
 import GoogleAnalytics from "@bradgarropy/next-google-analytics";
 import { NextSeo } from "next-seo";
 
@@ -12,6 +14,7 @@ import Router from "next/router";
 import NProgress from "nprogress"; //nprogress module
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link.js";
+
 //Route Events.
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
@@ -57,7 +60,18 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
   function toggleTheme() {
     setTheme(theme === "light" ? "dark" : "light");
+    setPlaybackRate(playbackRate + 0.1);
+    play();
   }
+
+  //for sound
+  const soundUrl = '/sounds/tap.mp3';
+  const [playbackRate, setPlaybackRate] = useState(0.75);
+
+  const [play] = useSound(soundUrl, {
+    playbackRate,
+    volume: 1.5,
+  });
 
   return (
     <>
