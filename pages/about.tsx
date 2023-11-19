@@ -98,7 +98,11 @@ export default function about() {
                   d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
                 />
               </svg>{" "}
+              <Link 
+              href='https://drive.google.com/file/d/1yjJBX_ZzQ1rYxCjhUINRC9FcEIyIr1sD/view?usp=sharing'
+              target="_blank">
               Resume
+              </Link>
             </motion.a>
           </div>
         </motion.div>
