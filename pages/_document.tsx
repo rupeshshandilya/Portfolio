@@ -1,6 +1,7 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
+  const currentYear = new Date().getFullYear();
   return (
     <Html lang="en">
       <Head />
@@ -368,7 +369,7 @@ l32 -67 493 -1 c411 0 492 2 492 14 0 17 -30 89 -39 96 -4 3 -20 37 -36 75
           <p className="copyright">
             Coded by{" "}
             <a href="https://www.rupeshshandilya.tech/"> Rupesh Shandilya </a> •
-            All rights reserved • {new Date().getFullYear()}
+            All rights reserved • {currentYear}
           </p>
         </div>
         <Main />
