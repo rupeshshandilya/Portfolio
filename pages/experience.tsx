@@ -12,7 +12,6 @@ export default function Experience() {
   interface Work {
     name: string;
     url?: string;
-    location: string;
     position: string;
     date: string;
     description: string;
@@ -22,28 +21,25 @@ export default function Experience() {
   interface PersonalWork {
     name: string;
     url: string;
-    image: string;
+    image?: string;
   }
 
   const internships: Work[] = [
     {
-      name: "M/s Prime Consulting",
-      position: "Software Developer",
-      location: "Remote",
-      date: "Oct 2022 - Jan 2023",
-      description:
-      "Developed login and signup authentication and form for getting data of user and performed CRUD opertion on it and deployed that on private server so specific user can have access of it.Developed login and signup authentication and form for getting data of user and performed CRUD opertion on it and deployed that on private server so specific user can have access of it.",
-      stacks: ["Html", "CSS", "JavaScript", "Django"],
-    },
-    {
       name: "Sensei Mods",
       url: "https://www.senseimods.com/",
       position: "Back End Developer",
-      location: "Remote",
       date: "Mar 2022 - Aug 2022",
       description:
-        "Developed backend of Sensei Mods in Django",
-      stacks: ["Django"],
+      "Using HTML, CSS, JS, and Django, I created and launched a gaming PC cable ordering website that expedited the shopping process and increased online sales by 40% in the Sirst month. Designed and oversaw the Django framework's integration, streamlining backend features for user authentication, product administration, and order processing",
+      stacks: ["Html", "CSS", "JavaScript","Django"],
+    },
+    {
+      name: "EXPERIENCE AND ADAPT INDIA PRIVATE LIMITED",
+      position: "Software Developer Intern",
+      date: "Feb 2024 - May 2024",
+      description:"Engineered a robust microservices architecture using Next.js in used Tailwind CSS and Nest.js and TypeScript for frontend to build microservices with individual databases using sharding for enhancing performance and scalability. Implemented Authentication Systems for user and seller microservice, focusing on secure data integrity and user veriSication. API Development for Product Listing Created updated, deleted, and fetched products in the product listing microservice, ensuring efSicient data handling and seamless integration with seller listings.",
+      stacks: ["Nextjs", "NestJs", "Postgresql", "Tailwind CSS", "TypeScript"],
     },
   ];
   const Freelancing: Work[] = [
@@ -51,10 +47,17 @@ export default function Experience() {
       name: "DGFT Guru",
       url: "https://www.dgftguru.com/",
       position: "Wordpress Developer",
-      location: "Remote",
       date: "April 2021 - Sep 2021",
       description: "Developed a Website in Wordpress",
       stacks: ["Wordpress"],
+    },
+    {
+      name: "M/s Prime Consulting",
+      position: "Full Stack Developer",
+      date: "Oct 2022 - Jan 2023",
+      description:
+      "Developed login and signup authentication and form for getting data of user and performed CRUD opertion on it and deployed that on private server so specific user can have access of it.Developed login and signup authentication and form for getting data of user and performed CRUD opertion on it and deployed that on private server so specific user can have access of it.",
+      stacks: ["Html", "CSS", "JavaScript", "Django"],
     },
   ];
   const sideProjects: PersonalWork[] = [
@@ -63,6 +66,22 @@ export default function Experience() {
       url: "https://github.com/rupeshshandilya/Encrypto",
       image: "/project/encrypto.jpeg",
     },
+    {
+      name: "TheXpressSalon",
+      url: "https://github.com/rupeshshandilya/xpress",
+      image: "/project/TheXpressSalon.png",
+    },
+    {
+      name: "FluentFriend",
+      url: "https://github.com/rupeshshandilya/fluentFriend-Frontend",
+      // image: "/project/encrypto.jpeg",
+    },
+    {
+      name: "Sorting Visualizer",
+      url: "https://github.com/rupeshshandilya/Sorting-Visualizer",
+      image: "/project/SortingVisualizer.png",
+    },
+    
   ];
 
   const [imageUrl, setImageUrl] = useState("");
@@ -119,7 +138,6 @@ export default function Experience() {
                   </div>
                   <div className="card-header__right">
                     <h3>{internship.date}</h3>
-                    <p>{internship.location}</p>
                   </div>
                 </div>
                 <div className="card-description">
@@ -189,7 +207,6 @@ export default function Experience() {
                   </div>
                   <div className="card-header__right">
                     <h3>{Freelancing.date}</h3>
-                    <p>{Freelancing.location}</p>
                   </div>
                 </div>
                 <div className="card-description">
