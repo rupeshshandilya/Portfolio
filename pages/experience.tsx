@@ -294,7 +294,7 @@ export default function Experience() {
                     passHref
                     onMouseEnter={() => {
                       cursorChangeHandler("hovered");
-                      handleMouseEnter(project.image, project.name);
+                      handleMouseEnter(project.image ?? "", project.name);
                     }}
                     onMouseLeave={() => {
                       cursorChangeHandler("");
