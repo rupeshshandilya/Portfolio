@@ -26,11 +26,20 @@ export default function Experience() {
 
   const internships: Work[] = [
     {
-      name: "EXPERIENCE AND ADAPT INDIA PRIVATE LIMITED",
+      name: "Coder Army",
+      url: "https://www.coderarmy.in/",
+      position: "Teaching Assistant",
+      date: "Sep 2024 - Present",
+      description:"Teaching Assistant at Coder Army – Mentored 800+ students in MERN stack (MongoDB, Express.js, React.js, Node.js), provided 1:1 support to 20+ students weekly, organized hackathons to boost real-world problem-solving and debugging skills",
+      stacks: ["Reactjs", "Nodejs", "Express.js","MongoDB"],
+    },
+    {
+      name: "Ofreex",
+      url: "https://www.ofreex.in/",
       position: "Software Developer Intern",
       date: "Feb 2024 - May 2024",
-      description:"Engineered a robust microservices architecture using Next.js in used Tailwind CSS and Nest.js and TypeScript for frontend to build microservices with individual databases using sharding for enhancing performance and scalability. Implemented Authentication Systems for user and seller microservice, focusing on secure data integrity and user veriSication. API Development for Product Listing Created updated, deleted, and fetched products in the product listing microservice, ensuring efSicient data handling and seamless integration with seller listings.",
-      stacks: ["Nextjs", "NestJs", "Postgresql", "Tailwind CSS", "TypeScript"],
+      description: "Engineered a robust microservices architecture using Nest.js and TypeScript, implementing individual databases with sharding, which improved system performance and scalability by 40%. Developed secure authentication systems for user and seller microservices, increasing data integrity and user verification accuracy by 35%. Designed and implemented GraphQL APIs for the Product Listing microservice to create, update, delete, and fetch product data, improving data handling efficiency and reducing response times by 45%. Enabled seamless integration with seller listings, enhancing system reliability by 30%.",
+      stacks: ["NestJs", "Postgresql", "Prisma", "TypeScript", "GraphQL"],
     },
     {
       name: "Sensei Mods",
@@ -61,6 +70,11 @@ export default function Experience() {
     },
   ];
   const sideProjects: PersonalWork[] = [
+    {
+      name: "Nexus",
+      url: "https://github.com/rupeshshandilya/Nexus",
+      image: "/project/Nexus.png",
+    },
     {
       name: "Encrypto",
       url: "https://github.com/rupeshshandilya/Encrypto",

@@ -99,7 +99,7 @@ export default function about() {
                 />
               </svg>{" "}
               <Link 
-              href='https://drive.google.com/file/d/19lT_ruVxgIWnRhNKRyeWwohywU7LLcmy/view?usp=sharing'
+              href='https://drive.google.com/file/d/1A3rWokWgLFS4f-ipzqeCw0mN9JDC8h-2/view?usp=sharing'
               target="_blank">
               Resume
               </Link>
