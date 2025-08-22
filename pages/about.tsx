@@ -27,6 +27,8 @@ export default function about() {
         birthDate.getDate() > today.getDate())
     ) {
       setAge(ageInYears - 1);
+    } else {
+      setAge(ageInYears);
     }
   }, []);
 
@@ -70,13 +72,17 @@ export default function about() {
             initial={{ y: "15%", opacity: 0 }}
             transition={{ delay: 0.1, duration: 0.5 }}
             className="about-left__text"
-          > 
-            Rupesh Shandilya here; thanks for visiting. As a
-            Full-Stack Web Developer and Android Developer, I am {age} years old
-            and have a strong enthusiasm for building stunning, user-friendly,
-            and responsive websites. Aside from writing articles about
-            development in my own time, I also enjoy listening to music.
-            Cryptography-related projects piqued my interest greatly.
+          >
+            Hey, I’m Rupesh 👋 A Computer Science Engineering student who loves
+            building things on the web. I enjoy working on backend and
+            full-stack projects, from crafting scalable APIs to designing smooth
+            user experiences. Over the past few years, I’ve worked with Node.js,
+            Nest.js, Next.js, Prisma, MongoDB, and PostgreSQL, building
+            platforms that improved performance, security, and user engagement.
+            I’m passionate about solving problems with clean code, exploring new
+            tech, and turning ideas into real products. When I’m not coding, I’m
+            usually learning something new in system design or experimenting
+            with side projects.
           </motion.p>
           <div className="about-left__links">
             <motion.a
@@ -98,10 +104,11 @@ export default function about() {
                   d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
                 />
               </svg>{" "}
-              <Link 
-              href='https://drive.google.com/file/d/1A3rWokWgLFS4f-ipzqeCw0mN9JDC8h-2/view?usp=sharing'
-              target="_blank">
-              Resume
+              <Link
+                href="https://drive.google.com/file/d/1uNPKr7sH8XngPgVGw8sybFcD3UcKx_Y1/view?usp=sharing"
+                target="_blank"
+              >
+                Resume
               </Link>
             </motion.a>
           </div>
