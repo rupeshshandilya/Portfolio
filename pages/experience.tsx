@@ -30,15 +30,17 @@ export default function Experience() {
       url: "https://www.coderarmy.in/",
       position: "Teaching Assistant",
       date: "Sep 2024 - Present",
-      description:"Teaching Assistant at Coder Army – Mentored 800+ students in MERN stack (MongoDB, Express.js, React.js, Node.js), provided 1:1 support to 20+ students weekly, organized hackathons to boost real-world problem-solving and debugging skills",
-      stacks: ["Reactjs", "Nodejs", "Express.js","MongoDB"],
+      description:
+        "Teaching Assistant at Coder Army – Mentored 800+ students in MERN stack (MongoDB, Express.js, React.js, Node.js), provided 1:1 support to 20+ students weekly, organized hackathons to boost real-world problem-solving and debugging skills",
+      stacks: ["Reactjs", "Nodejs", "Express.js", "MongoDB"],
     },
     {
       name: "Ofreex",
       url: "https://www.ofreex.in/",
       position: "Software Developer Intern",
       date: "Feb 2024 - May 2024",
-      description: "Engineered a robust microservices architecture using Nest.js and TypeScript, implementing individual databases with sharding, which improved system performance and scalability by 40%. Developed secure authentication systems for user and seller microservices, increasing data integrity and user verification accuracy by 35%. Designed and implemented GraphQL APIs for the Product Listing microservice to create, update, delete, and fetch product data, improving data handling efficiency and reducing response times by 45%. Enabled seamless integration with seller listings, enhancing system reliability by 30%.",
+      description:
+        "Engineered a robust microservices architecture using Nest.js and TypeScript, implementing individual databases with sharding, which improved system performance and scalability by 40%. Developed secure authentication systems for user and seller microservices, increasing data integrity and user verification accuracy by 35%. Designed and implemented GraphQL APIs for the Product Listing microservice to create, update, delete, and fetch product data, improving data handling efficiency and reducing response times by 45%. Enabled seamless integration with seller listings, enhancing system reliability by 30%.",
       stacks: ["NestJs", "Postgresql", "Prisma", "TypeScript", "GraphQL"],
     },
     {
@@ -47,17 +49,26 @@ export default function Experience() {
       position: "Back End Developer",
       date: "Mar 2022 - Aug 2022",
       description:
-      "Using HTML, CSS, JS, and Django, I created and launched a gaming PC cable ordering website that expedited the shopping process and increased online sales by 40% in the Sirst month. Designed and oversaw the Django framework's integration, streamlining backend features for user authentication, product administration, and order processing",
-      stacks: ["Html", "CSS", "JavaScript","Django"],
+        "Using HTML, CSS, JS, and Django, I created and launched a gaming PC cable ordering website that expedited the shopping process and increased online sales by 40% in the Sirst month. Designed and oversaw the Django framework's integration, streamlining backend features for user authentication, product administration, and order processing",
+      stacks: ["Html", "CSS", "JavaScript", "Django"],
     },
   ];
   const Freelancing: Work[] = [
+    {
+      name: "VillageAngle",
+      url: "https://play.google.com/store/apps/details?id=com.banothu_raju.villageAngel",
+      position: "Backend Developer",
+      date: "Aug 2025 - Oct 2025",
+      description:
+        "Built the complete backend system for VillageAngle, a clothing purchasing application. Developed secure REST APIs for product management, orders, users, and inventory. Implemented authentication, role-based access control, and built backend services for the admin panel to manage products, orders, and users efficiently.",
+      stacks: ["Node.js", "Express.js", "MongoDB", "JWT", "REST API"],
+    },
     {
       name: "M/s Prime Consulting",
       position: "Full Stack Developer",
       date: "Oct 2022 - Jan 2023",
       description:
-      "Developed login and signup authentication and form for getting data of user and performed CRUD opertion on it and deployed that on private server so specific user can have access of it.Developed login and signup authentication and form for getting data of user and performed CRUD opertion on it and deployed that on private server so specific user can have access of it.",
+        "Developed login and signup authentication and form for getting data of user and performed CRUD opertion on it and deployed that on private server so specific user can have access of it.Developed login and signup authentication and form for getting data of user and performed CRUD opertion on it and deployed that on private server so specific user can have access of it.",
       stacks: ["Html", "CSS", "JavaScript", "Django"],
     },
     {
@@ -95,7 +106,6 @@ export default function Experience() {
       url: "https://github.com/rupeshshandilya/Sorting-Visualizer",
       image: "/project/SortingVisualizer.png",
     },
-    
   ];
 
   const [imageUrl, setImageUrl] = useState("");
@@ -187,7 +197,7 @@ export default function Experience() {
                       </svg>
                       <span>Website</span>
                     </Link>
-                  ): (
+                  ) : (
                     <div
                       onMouseEnter={() => cursorChangeHandler("hovered")}
                       onMouseLeave={() => cursorChangeHandler("")}
