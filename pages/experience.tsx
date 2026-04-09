@@ -24,16 +24,28 @@ export default function Experience() {
     image?: string;
   }
 
-  const internships: Work[] = [
+  const fullTimeRoles: Work[] = [
     {
       name: "Coder Army",
-      url: "https://www.coderarmy.in/",
-      position: "Teaching Assistant",
-      date: "Sep 2024 - Present",
+      url: "https://strikes.in/",
+      position: "Backend Engineer",
+      date: "May 2025 - Present",
       description:
-        "Teaching Assistant at Coder Army – Mentored 800+ students in MERN stack (MongoDB, Express.js, React.js, Node.js), provided 1:1 support to 20+ students weekly, organized hackathons to boost real-world problem-solving and debugging skills",
-      stacks: ["Reactjs", "Nodejs", "Express.js", "MongoDB"],
+        "Designed scalable REST APIs with clean architecture and reusable services, reducing feature delivery time by 30%. Improved deployment reliability by containerizing backend services with Docker on AWS EKS, cut downstream API failures by 40% with rate limiting and traffic safeguards, optimized Prisma queries to lower response times by 35%, and improved submission success rates by 20% by analyzing 5,000+ monthly sessions with Mixpanel and Microsoft Clarity.",
+      stacks: [
+        "Node.js",
+        "TypeScript",
+        "Express.js",
+        "Prisma ORM",
+        "MongoDB",
+        "Docker",
+        "AWS EKS",
+        "S3",
+        "CloudFront",
+      ],
     },
+  ];
+  const internships: Work[] = [
     {
       name: "Ofreex",
       url: "https://www.ofreex.in/",
@@ -54,6 +66,14 @@ export default function Experience() {
     },
   ];
   const Freelancing: Work[] = [
+    {
+      name: "Syinq",
+      url: "https://play.google.com/store/apps/details?id=com.rasync.sync",
+      position: "Full Stack Developer",
+      date: "Available on Play Store",
+      description:
+        "Developed Syinq, a student-focused carpooling and community platform that streamlines ride sharing, communication, and campus connectivity. Built core features such as smart ride matching, recurring trip scheduling, fare sharing, and trip coordination to improve daily commuting. Implemented safety and verification modules including campus ID checks, driver validation, organization verification, and secure in-app communication. Contributed to both mobile and web development by creating responsive interfaces, improving user flows, and supporting admin management features.",
+    },
     {
       name: "VillageAngle",
       url: "https://play.google.com/store/apps/details?id=com.banothu_raju.villageAngel",
@@ -149,11 +169,11 @@ export default function Experience() {
               initial={{ y: "50%", opacity: 0 }}
               transition={{ delay: 0.1, duration: 0.5 }}
             >
-              Internships
+              Full-Time
             </motion.h2>
           </div>
           <div className="experience-internship__cards">
-            {internships.map((internship, index) => (
+            {fullTimeRoles.map((internship, index) => (
               <motion.div className="card" key={index} variants={skillsItem}>
                 <div className="card-header">
                   <div className="card-header__left">
@@ -204,6 +224,75 @@ export default function Experience() {
                     >
                       <span>In Developement</span>
                     </div>
+                  )}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+        <motion.div
+          className="experience-internship"
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
+          <div
+            className="experience-internship__title"
+            style={{ overflow: "hidden" }}
+          >
+            <motion.h2
+              animate={{ y: 0, opacity: 1 }}
+              initial={{ y: "50%", opacity: 0 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
+            >
+              Internships
+            </motion.h2>
+          </div>
+          <div className="experience-internship__cards">
+            {internships.map((Freelancing, index) => (
+              <motion.div className="card" key={index} variants={skillsItem}>
+                <div className="card-header">
+                  <div className="card-header__left">
+                    <h3>{Freelancing.name}</h3>
+                    <p>{Freelancing.position}</p>
+                  </div>
+                  <div className="card-header__right">
+                    <h3>{Freelancing.date}</h3>
+                  </div>
+                </div>
+                <div className="card-description">
+                  <p>{Freelancing.description}</p>
+                </div>
+                {Freelancing.stacks && (
+                  <div className="card-stacks">
+                    {Freelancing.stacks.map((item) => {
+                      return <button>{item}</button>;
+                    })}
+                  </div>
+                )}
+                <div className="card-footer">
+                  {Freelancing.url && (
+                    <Link
+                      href={Freelancing.url}
+                      passHref
+                      onMouseEnter={() => cursorChangeHandler("hovered")}
+                      onMouseLeave={() => cursorChangeHandler("")}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={2}
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                      <span>Website</span>
+                    </Link>
                   )}
                 </div>
               </motion.div>

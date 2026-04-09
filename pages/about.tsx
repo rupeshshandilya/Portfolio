@@ -105,7 +105,7 @@ export default function about() {
                 />
               </svg>{" "}
               <Link
-                href="https://drive.google.com/file/d/1uNPKr7sH8XngPgVGw8sybFcD3UcKx_Y1/view?usp=sharing"
+                href="https://drive.google.com/file/d/1VmESsIKfKNj48MoKzbb6C_KuIZXNTDhb/view?usp=sharing"
                 target="_blank"
               >
                 Resume
